@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-    <title>BBC Sports Page</title>  
+  <title>BBC Sports Page</title>  
   <head>
     <style>
       body {
@@ -10,7 +10,6 @@
       header {
         margin: 0;
         padding: 1px;
-        border-bottom: 1px solid #cccccc5b;
         color: white;
         text-align: center;
       }
@@ -23,8 +22,7 @@
       }
 
       a:hover {
-        border-bottom: 2px solid white;
-
+        border-bottom: 4px solid black;
       }
       h1.title {
         font-family: sans-serif;
@@ -65,39 +63,72 @@
         text-align: center;
         margin: 1px;
       }
+      div.page {
+        width: 800px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+      }
+      .row {
+        position: absolute;
+        z-index: 1;
+      }
+      .white {
+        background-color: white;
+        width: calc(100vw);
+        height: 42px;
+        border-bottom: 1px solid #cccccc;
+      }
+      .yellow{
+        background-color: #ffd230;
+        width: calc(100vw);
+        height: 70px;
+        top: 43px;
+      }
     </style>
   </head> 
 
   <body>
-    <div class="title">
-      <h1 class="title"><span>B</span><span>B</span><span>C</span></h1>
-    </div>
-    <div class="category">
-      <h2 class="category">Sport</h2>
-    </div>
-    <header>
-      <div class="links">
-        <nav class="links">
-          <a href="http://www.bbc.co.uk/sport" title="home">Home</a>
-          <a href="http://www.bbc.co.uk/sport/football" title="Football">Football</a>
-          <a href="http://www.bbc.co.uk/sport/formula1" title="Formula 1">Formula 1</a>
-          <a href="http://www.bbc.co.uk/sport/cricket" title="Cricket">Cricket</a>
-          <a href="http://www.bbc.co.uk/sport/rugby-union" title="rugby union">Rugby U</a> 
-          <a href="http://www.bbc.co.uk/sport/rugby-league" title="Rugby-league">Rugby L</a>
-          <a href="http://www.bbc.co.uk/sport/tennis" title="Tennis">Tennis</a>
-          <a href="http://www.bbc.co.uk/sport/golf" title="golf">golf</a>
-          <a href="http://www.bbc.co.uk/sport/athletics" title="athletics">Athletics</a>
-        </nav>
-      </div>    
-      </header>
-   <br>
-   <img src="salah.jpg" alt="Liverpool top scorer Mo Salah" width="400" height="257">
-   <br>
-   <ol>
-     <li>Karius</li><li>Clyne</li><li>Lovren</li><li>Van Dijk</li><li>Klavan</li><li>Wijnaldum</li><li>Henderson</li><li>Milner</li><li>Ings</li><li>Salah</li><li>Mane</li>
-   </ol>
+    <div class="white row"></div>
+    <div class="yellow row"></div>
+      <div class="page"> 
+        <div class="title">
+          <h1 class="title"><span>B</span><span>B</span><span>C</span></h1>
+        </div>
+        <div class="category">
+          <h2 class="category">Sport</h2>
+        </div>
+        <header>
+          <div class="links">
+            <nav class="links">
+              <a href="http://www.bbc.co.uk/sport" title="home">Home</a>
+              <a href="http://www.bbc.co.uk/sport/football" title="Football">Football</a>
+              <a href="http://www.bbc.co.uk/sport/formula1" title="Formula 1">Formula 1</a>
+              <a href="http://www.bbc.co.uk/sport/cricket" title="Cricket">Cricket</a>
+              <a href="http://www.bbc.co.uk/sport/rugby-union" title="rugby union">Rugby U</a> 
+              <a href="http://www.bbc.co.uk/sport/rugby-league" title="Rugby-league">Rugby L</a>
+              <a href="http://www.bbc.co.uk/sport/tennis" title="Tennis">Tennis</a>
+              <a href="http://www.bbc.co.uk/sport/golf" title="golf">golf</a>
+              <a href="http://www.bbc.co.uk/sport/athletics" title="athletics">Athletics</a>
+            </nav>
+          </div>    
+          </header>
+        <br>
+        <img src="salah.jpg" alt="Liverpool top scorer Mo Salah" width="400" height="257">
+        <br>
+        <ol>
+          <li>Karius</li>
+          <li>Clyne</li>
+          <li>Lovren</li>
+          <li>Van Dijk</li>
+          <li>Klavan</li>
+          <li>Wijnaldum</li>
+          <li>Henderson</li>
+          <li>Milner</li>
+          <li>Ings</li>
+          <li>Salah</li>
+          <li>Mane</li>
+        </ol>
+      </div>
   </body>
-
-  
-
 </html>
